@@ -1,0 +1,41 @@
+@import "../../Constants/_variables";
+
+.header-c {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .nav-container {
+        width: 70%;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        a {
+            color: white;
+        }
+        .nav-item {
+            width: 100px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: $font-size-big;
+            
+            &:hover {
+                cursor: pointer;
+                background: gray;
+            }
+        }
+        
+        .active {
+            background: gray;
+        }
+
+        
+    }
+}
